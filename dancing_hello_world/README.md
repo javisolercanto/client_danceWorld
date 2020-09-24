@@ -1,3 +1,10 @@
+For execute run:
+
+  - npm install
+  - npm build
+  - npm start
+  - localhost:8080
+
 Exercise.
 
 2 points -> js/main.js with two global variables myState i myApp. Figure out a way to avoid globality. (Hint. Closures could help you)
