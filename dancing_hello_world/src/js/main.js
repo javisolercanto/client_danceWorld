@@ -1,6 +1,7 @@
 'use strict'
 
 import { docReady } from './core/core.js';
+import './controlers/stopball.js'
 import '../style/style.css'
 
 let myApp = (function () {

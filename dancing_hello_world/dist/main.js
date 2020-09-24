@@ -497,23 +497,17 @@ module.exports = function (list, options) {
 /*!***************************************!*\
   !*** ./src/js/controlers/stopball.js ***!
   \***************************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _main_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../main.js */ "./src/js/main.js");
 
 
-
-
-(function stopball() {
-  document.body.onkeyup = function (e) {
-    if (e.keyCode == 32) {
-      _main_js__WEBPACK_IMPORTED_MODULE_0__["myApp"].action();
-    }
-  };
-})();
+document.body.onkeyup = function (e) {
+  if (e.keyCode == 32) {
+    myApp.action();
+  }
+};
 
 /***/ }),
 
@@ -552,7 +546,8 @@ function docReady(fn) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "myApp", function() { return myApp; });
 /* harmony import */ var _core_core_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./core/core.js */ "./src/js/core/core.js");
-/* harmony import */ var _controlers_stopball_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./controlers/stopball.js */ "./src/js/controlers/stopball.js");
+/* harmony import */ var _controlers_stopball__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./controlers/stopball */ "./src/js/controlers/stopball.js");
+/* harmony import */ var _controlers_stopball__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_controlers_stopball__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _style_style_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../style/style.css */ "./src/style/style.css");
 /* harmony import */ var _style_style_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_style_style_css__WEBPACK_IMPORTED_MODULE_2__);
 
