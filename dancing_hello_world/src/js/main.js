@@ -44,7 +44,7 @@ let myApp = (function () {
     }
 
     let action = () => { stateApp === "stop" ? start() : stop(); }
-
+    
     loop = inicia(document.getElementById("ball"));
 
     return { start: start, action: action };
