@@ -1,9 +1,9 @@
 'use strict'
 
 import { docReady } from './core/core.js';
-import { stopball } from './controlers/stopball.js';
+import '../style/style.css'
 
-let myApp = (function() {
+let myApp = (function () {
 
     let stateApp = "run";
     let interval;
@@ -33,24 +33,21 @@ let myApp = (function() {
         }
     };
 
-    let start = function() {
+    let start = () => {
         stateApp = "run"
         interval = setInterval(loop, 50);
     }
 
-    let stop = function() {
+    let stop = () => {
         stateApp = "stop";
         clearInterval(interval);
     }
 
-    let action = function() {
-        stateApp === "stop" ? start() : stop();
-    }
+    let action = () => { stateApp === "stop" ? start() : stop(); }
 
     loop = inicia(document.getElementById("ball"));
-    stopball();
 
-    return {start: start, action: action};
+    return { start: start, action: action };
 })();
 
 docReady(myApp.start);
